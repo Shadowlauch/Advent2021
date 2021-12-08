@@ -1,0 +1,7 @@
+import {readFileLines} from '../utils';
+
+export default async function (fileName: string) {
+  const lines = await readFileLines<string>(__dirname + '/' + fileName);
+
+  console.log('Answer 1')
+}
