@@ -6,4 +6,5 @@ export const readFileGrid = (fileName: string): Promise<string[][]> => readFile(
 
 export const mod = (n: number, m: number): number => ((n % m) + m) % m;
 
-
+export const indexToCoords = (i: number, width: number) => [i % width, Math.floor(i / width)];
+export const coordsToIndex = (x: number, y: number, width: number) =>  y * width + x;
